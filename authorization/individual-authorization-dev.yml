@@ -1,0 +1,18 @@
+server:
+  port: 8001
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysqldb:3306/Movie_theater?useSSL=false&allowPublicKeyRetrieval=true
+    username: user
+    password: 123456
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+  jackson:
+    time-zone: UTC
+demo:
+  hello: Hello World
